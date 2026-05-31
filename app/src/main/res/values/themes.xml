@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Pokedex" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Pokedex" parent="Base.Theme.Pokedex" />
+
+    <!--LinearLayout bọc ngoài textView và progressBar-->
+    <style name="styleLinearLayoutStat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--style texView stat(hp,atk,def...)-->
+    <style name="styleTextStats">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--style texView stat Value-->
+    <style name="styleTextStatsValue">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:text">@string/stat_value</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--style ProgressBar-->
+    <style name="styleProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:max">255</item>
+        <item name="android:progress">0</item>
+        <item name="android:progressDrawable">@drawable/bg_custom_progress_bar</item>
+    </style>
+
+    <string name="stat_value">0</string>
+</resources>

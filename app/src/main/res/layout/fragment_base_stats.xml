@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_base_stats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <LinearLayout style="@style/styleLinearLayoutStat">
+
+        <TextView
+            style="@style/styleTextStats"
+            android:text="@string/stat_hp" />
+
+        <TextView
+            android:id="@+id/tvStatHP"
+            style="@style/styleTextStatsValue" />
+
+        <ProgressBar
+            android:id="@+id/pbStatHP"
+            style="@style/styleProgressBar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/styleLinearLayoutStat">
+
+        <TextView
+            style="@style/styleTextStats"
+            android:text="@string/stat_attack" />
+
+        <TextView
+            android:id="@+id/tvStatAT"
+            style="@style/styleTextStatsValue" />
+
+        <ProgressBar
+            android:id="@+id/pbStatAT"
+            style="@style/styleProgressBar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/styleLinearLayoutStat">
+
+        <TextView
+            style="@style/styleTextStats"
+            android:text="@string/stat_def" />
+
+        <TextView
+            android:id="@+id/tvStatDef"
+            style="@style/styleTextStatsValue" />
+
+        <ProgressBar
+            android:id="@+id/pbStatDef"
+            style="@style/styleProgressBar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/styleLinearLayoutStat">
+
+        <TextView
+            style="@style/styleTextStats"
+            android:text="@string/sp_atk" />
+
+        <TextView
+            android:id="@+id/tvStatSPAtk"
+            style="@style/styleTextStatsValue" />
+
+        <ProgressBar
+            android:id="@+id/pbStatSPAtk"
+            style="@style/styleProgressBar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/styleLinearLayoutStat">
+
+        <TextView
+            style="@style/styleTextStats"
+            android:text="@string/sp_def" />
+
+        <TextView
+            android:id="@+id/tvStatSPDef"
+            style="@style/styleTextStatsValue" />
+
+        <ProgressBar
+            android:id="@+id/pbStatSPDef"
+            style="@style/styleProgressBar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/styleLinearLayoutStat">
+
+        <TextView
+            style="@style/styleTextStats"
+            android:text="@string/speed" />
+
+        <TextView
+            android:id="@+id/tvStatSpeed"
+            style="@style/styleTextStatsValue" />
+
+        <ProgressBar
+            android:id="@+id/pbStatSpeed"
+            style="@style/styleProgressBar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/styleLinearLayoutStat">
+
+        <TextView
+            style="@style/styleTextStats"
+            android:text="@string/total" />
+
+        <TextView
+            android:id="@+id/tvStatTotal"
+            style="@style/styleTextStatsValue" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="?android:attr/textColorPrimary" />
+
+        <ImageView
+            android:id="@+id/ivDetailTeam"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp" />
+
+        <TextView
+            android:id="@+id/tvNameDetailTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/base_stats_team"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/colorButtonNormal"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout style="@style/styleLinearLayoutStat">
+
+                <TextView
+                    style="@style/styleTextStats"
+                    android:text="@string/stat_hp" />
+
+                <TextView
+                    android:id="@+id/tvStatHP"
+                    style="@style/styleTextStatsValue" />
+
+                <ProgressBar
+                    android:id="@+id/pbStatHP"
+                    style="@style/styleProgressBar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/styleLinearLayoutStat">
+
+                <TextView
+                    style="@style/styleTextStats"
+                    android:text="@string/stat_attack" />
+
+                <TextView
+                    android:id="@+id/tvStatAT"
+                    style="@style/styleTextStatsValue" />
+
+                <ProgressBar
+                    android:id="@+id/pbStatAT"
+                    style="@style/styleProgressBar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/styleLinearLayoutStat">
+
+                <TextView
+                    style="@style/styleTextStats"
+                    android:text="@string/stat_def" />
+
+                <TextView
+                    android:id="@+id/tvStatDef"
+                    style="@style/styleTextStatsValue" />
+
+                <ProgressBar
+                    android:id="@+id/pbStatDef"
+                    style="@style/styleProgressBar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/styleLinearLayoutStat">
+
+                <TextView
+                    style="@style/styleTextStats"
+                    android:text="@string/sp_atk" />
+
+                <TextView
+                    android:id="@+id/tvStatSPAtk"
+                    style="@style/styleTextStatsValue" />
+
+                <ProgressBar
+                    android:id="@+id/pbStatSPAtk"
+                    style="@style/styleProgressBar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/styleLinearLayoutStat">
+
+                <TextView
+                    style="@style/styleTextStats"
+                    android:text="@string/sp_def" />
+
+                <TextView
+                    android:id="@+id/tvStatSPDef"
+                    style="@style/styleTextStatsValue" />
+
+                <ProgressBar
+                    android:id="@+id/pbStatSPDef"
+                    style="@style/styleProgressBar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/styleLinearLayoutStat">
+
+                <TextView
+                    style="@style/styleTextStats"
+                    android:text="@string/speed" />
+
+                <TextView
+                    android:id="@+id/tvStatSpeed"
+                    style="@style/styleTextStatsValue" />
+
+                <ProgressBar
+                    android:id="@+id/pbStatSpeed"
+                    style="@style/styleProgressBar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/styleLinearLayoutStat">
+
+                <TextView
+                    style="@style/styleTextStats"
+                    android:text="@string/total" />
+
+                <TextView
+                    android:id="@+id/tvStatTotal"
+                    style="@style/styleTextStatsValue" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/moves"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <TextView
+                android:id="@+id/tvMoveSlot1"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:background="@drawable/custom_pill_flat"
+                android:backgroundTint="?android:attr/colorButtonNormal"
+                android:gravity="center"
+                android:text="@string/unknow"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMoveSlot2"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:background="@drawable/custom_pill_flat"
+                android:backgroundTint="?android:attr/colorButtonNormal"
+                android:gravity="center"
+                android:text="@string/unknow"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMoveSlot3"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:background="@drawable/custom_pill_flat"
+                android:backgroundTint="?android:attr/colorButtonNormal"
+                android:gravity="center"
+                android:text="@string/unknow"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMoveSlot4"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:background="@drawable/custom_pill_flat"
+                android:backgroundTint="?android:attr/colorButtonNormal"
+                android:gravity="center"
+                android:text="@string/unknow"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveTeamDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:minHeight="55dp"
+            android:paddingVertical="12dp"
+            android:text="@string/save_change"
+            android:textColor="#2A75BB"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFCB05"
+            app:cornerRadius="16dp" />
+
+    </LinearLayout>
+</ScrollView>

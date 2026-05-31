@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_pokedex"
+        android:icon="@drawable/pokeballs"
+        android:title="@string/nav_pokedex" />
+    <item
+        android:id="@+id/nav_move_items"
+        android:icon="@drawable/moves_items"
+        android:title="@string/nav_move_items" />
+    <item
+        android:id="@+id/nav_favorite"
+        android:icon="@drawable/favoritepokemon"
+        android:title="@string/nav_favorite" />
+    <item
+        android:id="@+id/nav_team"
+        android:icon="@drawable/teams"
+        android:title="@string/nav_teams" />
+</menu>
