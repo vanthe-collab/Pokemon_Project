@@ -3,7 +3,8 @@
 Ứng dụng tra cứu thông tin chi tiết các loài Pokemon với giao diện bo tròn tối giản.
 
 ### 📸 Giao diện ứng dụng
-*(Bạn kéo thả 1 tấm ảnh chụp màn hình đẹp nhất của app vào thẳng khung soạn thảo của GitHub, nó sẽ tự tạo link ảnh thay thế cho dòng chữ này)*
+<img width="1344" height="2992" alt="Screenshot_20260617_092030" src="https://github.com/user-attachments/assets/1cf8af89-d440-4e23-8bea-47e1409c7a7b" />
+<img width="1344" height="2992" alt="Screenshot_20260617_092006" src="https://github.com/user-attachments/assets/e52d9333-ef73-4b73-a319-df4fdb9345ed" />
 
 ### 🛠 Công nghệ sử dụng
 * **Ngôn ngữ:** Kotlin
